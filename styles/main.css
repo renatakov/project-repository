@@ -103,9 +103,8 @@ color: #CEC3B5;
   justify-content: center;
   align-items: center;
   background: #CEC3B5;
-border-radius: 20px;
-padding: 25px;
-filter: none;
+  border-radius: 20px;
+  padding: 25px;
 }
 .modalWindow__number {
   font-weight: 600;
@@ -130,7 +129,35 @@ color: #CEC3B5;
   background-color: transparent;
 }
 
-.inputSearch{
+.menu-btn {
+  display: none;
+width: 29px;
+height: 22px;
+position: relative;
+z-index:2;
+overflow: hidden;
+left: 15px;
+top: 0px;
+}
+.menu-btn span {
+width: 30px;
+height: 2px;
+position: absolute;
+border-radius: 5px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #CEC3B5;;
+transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+top: calc(50% + 5px);
+}
+
+/* .inputSearch{
   border: 1px solid #fdfdfd;
 border-radius: 15px;
 font-weight: 500;
@@ -139,5 +166,117 @@ line-height: 17px;
 background:url('/img/icons/search\ 2.svg') 95% 50% no-repeat, rgba(0, 0, 0, 0.6);
 color: #fdfdfd;
 padding: 9px 70px 8px 14px;
+} */
+
+/* планшет - (section-1) */
+
+@media (min-width: 768px) and (max-width: 835px) {
+  .section-1 {
+    background: linear-gradient(90deg, rgba(31, 22, 18, 0.65) 40%, transparent 60%) no-repeat,
+    url('/img/section-1/photo-1497515114629-f71d768fd07c.png') 75% 60% no-repeat;
+    background-size: cover;
+
+  }
+  .header__span {
+    font-size: 20px;
+  }
+  .list__li  a{
+    font-size: 16px;
+  }
+  .section-1__main {
+    margin-left: 85.20px;
+    flex: 0 1 45%;
+  }
+  .main__title span{
+    font-size: 64px;
+    line-height: 25px;
+  }
+  .main__subtext {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .main__subtext span{
+    font-size: 24px;
+  }
+  .main__btn {
+    font-size: 20px;
+    padding: 16px 50px;
+    margin-top: 50px;
+  }
+  .section-1__modalWindow {
+  padding: 50px;
+  margin: -120px;
+  }
+  .modalWindow__number {
+    font-size: 24px;
+line-height: 29px;
+  }
+  .modalWindow__linkToNumber {
+    font-size: 16px;
+line-height: 20px;
+padding: 11px 46px;
+  }
 }
 
+/* телефон - section-1 */
+
+@media (min-width: 375px) and (max-width: 391px){
+  .section-1{
+      background: linear-gradient(120deg, rgba(31, 22, 18, 0.35) 100%, transparent 0%) no-repeat,
+      url('/img/section-1/photo-1497515114629-f71d768fd07c.png') 45% 60% no-repeat;
+      background-size: cover;
+  }
+  .header__span {
+    font-size: 16px;
+line-height: 20px;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .menu-btn{
+    display: flex;
+  }
+  .section-1__main {
+    align-items: center;
+    justify-content: center;
+    margin: 45px;
+    flex: 0 1 65%;
+  }
+  .main__title span{
+    font-size: 36px;
+line-height: 44px;
+  }
+  .main__subtext{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .main__subtext span{
+    font-size: 24px;
+line-height: 29px;
+text-align: center;
+  }
+  .main__btn {
+    font-size: 16px;
+line-height: 20px;
+padding: 6px 24px;
+margin-top: 26px;
+  }
+  .section-1__modalWindow {
+    padding: 25px;
+    margin: -250px;
+  }
+  .section-1__modalWindow__close {
+  }
+  .modalWindow__number {
+    font-size: 16px;
+line-height: 20px;
+  }
+  .modalWindow__linkToNumber {
+    font-size: 12px;
+line-height: 15px;
+padding: 10px 40px;
+  }
+}
