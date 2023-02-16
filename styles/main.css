@@ -220,7 +220,7 @@ padding: 11px 46px;
 
 /* телефон - section-1 */
 
-@media (min-width: 375px) and (max-width: 391px){
+@media (min-width: 320px) and (max-width: 426px){
   .section-1{
       background: linear-gradient(120deg, rgba(31, 22, 18, 0.35) 100%, transparent 0%) no-repeat,
       url('/img/section-1/photo-1497515114629-f71d768fd07c.png') 45% 60% no-repeat;
@@ -241,8 +241,8 @@ line-height: 20px;
   .section-1__main {
     align-items: center;
     justify-content: center;
-    margin: 45px;
-    flex: 0 1 65%;
+    margin: 5px;
+    flex: 0 1 90%;
   }
   .main__title span{
     font-size: 36px;
