@@ -128,45 +128,93 @@ color: #CEC3B5;
   font-weight: 700;
   background-color: transparent;
 }
+.menu{
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(206, 195, 181, 0.2);
+  backdrop-filter: blur(10px);
+  margin: 80px 0 0 20px;
+}
 
 .menu-btn {
-  display: none;
-width: 29px;
-height: 22px;
-position: relative;
-z-index:2;
-overflow: hidden;
-left: 15px;
-top: 0px;
-}
-.menu-btn span {
-width: 30px;
-height: 2px;
-position: absolute;
-border-radius: 5px;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-color: #CEC3B5;;
-transition: all 0.5s;
-}
-.menu-btn span:nth-of-type(2) {
-top: calc(50% - 5px);
-}
-.menu-btn span:nth-of-type(3) {
-top: calc(50% + 5px);
+  width: 40px;
+  height: 30px;
+  /* position: relative; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
-/* .inputSearch{
-  border: 1px solid #fdfdfd;
-border-radius: 15px;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-background:url('/img/icons/search\ 2.svg') 95% 50% no-repeat, rgba(0, 0, 0, 0.6);
-color: #fdfdfd;
-padding: 9px 70px 8px 14px;
-} */
+.menu-btn__burger {
+  width: 30px;
+  height: 3px;
+  background: #CEC3B5;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #CEC3B5;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-6px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(6px);
+}
+
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background: #CEC3B5;
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background: #CEC3B5;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+height: 1160px;
+width: 195px;
+
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.nav-list > li{
+  font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-decoration: underline;
+color: #CEC3B5;
+}
+
 
 /* планшет - (section-1) */
 
@@ -235,9 +283,7 @@ line-height: 20px;
     display: none;
   }
 
-  .menu-btn{
-    display: flex;
-  }
+
   .section-1__main {
     align-items: center;
     justify-content: center;
