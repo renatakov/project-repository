@@ -1,0 +1,182 @@
+@media  (min-width: 834px){
+    .cart_wrapper{
+        width: 740px;
+        height: 456px;  
+    }
+
+    .your_purchases{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 30px; 
+        margin-bottom: 50px;
+    }
+
+    .product_wrapper{
+        width: 628.02px;
+        height: 78.5px; 
+        margin-bottom: 30px;
+    }
+
+    .product_img{
+        width: 65.42px;
+        height: 65.42px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+    .caption_wrapper{
+        margin-left: 12px;
+        }
+
+        .first_part{
+            margin-top: 12px;
+            margin-bottom: 12px;
+            }
+
+            .cappucino{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            
+            .product_caption{
+                font-size: 10px;
+                line-height: 12px;
+                margin-top: 4px;
+            }
+
+            .second_part{
+                margin-top: 22px;
+                margin-left: 140px;
+                display: flex;
+                }
+
+                .price{
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-right: 20px;
+                    margin-top: 6px;
+                }
+
+                .del{
+                    width: 87px;
+                    height: 33px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    border-radius: 20px;
+                }
+
+                .zahalom{
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 30px;
+                }
+
+                .back_to_order{
+                    width: 283.92px;
+                    height: 33.36px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-left: 170px;
+                }
+
+                .pay{
+                    width: 87.66px;
+                    height: 34.36px;
+                    font-size: 12px;
+                    line-height: 15px;  
+                    border-radius: 20px;
+                }
+}
+
+@media (min-width: 1280px){
+    .cart_wrapper{
+        position: absolute;
+        width: 1100px;
+        height: 700px; 
+    }
+
+    .your_purchases{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 50px; 
+    }
+
+    .product_wrapper{
+        width: 960px;
+        height: 120px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    .product_img{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .caption_wrapper{
+        margin-left: 20px;
+        }
+
+        .first_part{
+            margin-top: 23px;
+            margin-bottom: 23px;
+            }
+
+            .cappucino{
+                font-size: 24px;
+                line-height: 29px;
+            }
+            
+            .product_caption{
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+
+            .second_part{
+                margin-top: 34px;
+                margin-left: 185px;
+                display: flex;
+                }
+
+                .price{
+                    font-size: 40px;
+                    line-height: 49px;
+                    margin-right: 30px;
+                    margin-top: 3px;
+                }
+
+                .del{
+                    width: 134px;
+                    height: 51px;       
+                    font-size: 20px;
+                    line-height: 24px;
+                    border-radius: 20px;
+                }
+
+                .zahalom{
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 50px;
+                }
+
+                .back_to_order{
+                    width: 434px;
+                    height: 51px;
+                    font-size: 20px;
+                    line-height: 24px; 
+                    margin-left: 265px;
+                }
+
+                .pay{
+                    width: 134px;
+                    height: 51px;
+                    font-size: 20px;
+                    line-height: 24px;  
+                    border-radius: 20px;
+                }
+}

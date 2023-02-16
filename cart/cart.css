@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat';
+    color: #130E0A;
+    border: none;
+}
+
+
+.cart_wrapper{
+position: absolute;
+width: 340px;
+height: 291px;
+background: #CEC3B5;
+border-radius: 20px;
+}
+
+.your_purchases{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.product_wrapper{
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;
+    background: rgba(19, 14, 10, 0.05);
+    border-radius: 15px;
+    width: 290px;
+    height: 50px; 
+    margin-bottom: 20px;  
+}
+
+.product_img{
+    width: 40px;
+    height: 40px;
+    background: url(.jpg);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.caption_wrapper{
+margin-left: 5px;
+display: flex;
+}
+
+.first_part{
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.cappucino{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.product_caption{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 9px;
+}
+
+.second_part{
+margin-top: 8px;
+margin-left: 35px;
+}
+
+.price{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.del{
+    background: #A2581A;
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 8px;
+    line-height: 10px;
+    color: #CEC3B5;
+    font-weight: 600;
+    width: 54px;
+    height: 16px;
+}
+
+.zahalom{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price_wrap{
+    color: #A2581A;
+}
+
+.back_to_order{
+    width: 150px;
+    height: 16px;
+    background: #A2581A;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: #CEC3B5;
+    margin-left: 66px;
+}
+
+.pay{
+    width: 54px;
+    height: 16px;
+    background: #130E0A;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: #CEC3B5;
+}
