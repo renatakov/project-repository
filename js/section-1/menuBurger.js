@@ -16,8 +16,8 @@ menuBtn.addEventListener('click', ()=> {
         imgBuy1.style.display = 'none';
         imgCall1.style.display = 'none';
         imgSearch1.style.display = 'none';
-
-        // menu.style.height = window.innerHeight + 'px';
+        menuBtn.style.marginTop = '30px';
+        menu.style.paddingLeft = '20px';
         menu.style.background = 'rgba(206, 195, 181, 0.2)'
         menu.style.backdropFilter = 'blur(10px)';
     }
@@ -27,6 +27,8 @@ menuBtn.addEventListener('click', ()=> {
         menu.style.width = '0';
         menu.style.background = 'none'
         menu.style.backdropFilter = 'none';
+        menuBtn.style.marginTop = '0';
+        menu.style.paddingLeft = '0';
         imgBuy1.style.display = 'block';
         imgCall1.style.display = 'block';
         imgSearch1.style.display = 'block';

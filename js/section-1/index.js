@@ -23,7 +23,7 @@ imgCall.addEventListener('click', (e) => {
     main.style.opacity = '0.2';
     header.style.opacity = '0.2';
   }
-  if(window.innerWidth >= 320 && window.innerWidth <= 425){
+  if(window.innerWidth >= 320 && window.innerWidth <= 426){
     mainTitle.style.display = 'none';
     mainSubText.style.display = 'none';
     mainBtn.style.display = 'none';
@@ -41,7 +41,7 @@ modalWindowClose.addEventListener('click', (e) => {
     section1.style.backgroundSize = 'cover';
     section1.style.backgroundRepeat = 'no-repeat';
     section1.style.backgroundBlendMode = 'color-burn';
-    if(window.innerWidth >= 320 && window.innerWidth <= 425){
+    if(window.innerWidth >= 320 && window.innerWidth <= 426){
       mainTitle.style.display = 'block';
       mainSubText.style.display = 'block';
       mainBtn.style.display = 'block';
