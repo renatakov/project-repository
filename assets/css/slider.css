@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+body p::-moz-selection, body h1::-moz-selection, body h2::-moz-selection, body a::-moz-selection {
+  color: #CEC3B5;
+  background-color: rgba(162, 87, 26, 0.7568627451);
+}
+
+body p::selection, body h1::selection, body h2::selection, body a::selection {
+  color: #CEC3B5;
+  background-color: rgba(162, 87, 26, 0.7568627451);
+}
+
 .products {
   background-color: #130E0A;
   text-align: center;
@@ -146,6 +156,7 @@
   padding: 30px 40px;
   border-radius: 15px;
   display: inline-block;
+  transition: border 0.3s;
   border: 1px solid #CEC3B5;
 }
 @media (max-width: 998px) {
@@ -201,7 +212,7 @@
 }
 .products .card .product_smt, .products .card2 .product_smt {
   display: flex;
-  margin-top: 10px;
+  margin-top: 15px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -212,11 +223,15 @@
   margin: 0;
 }
 .products .card .product_smt_btn, .products .card2 .product_smt_btn {
+  transition: background 0.3s;
   background: #A2581A;
   border-radius: 15px;
   padding: 13px 23px;
   border: none;
   color: #CEC3B5;
+}
+.products .card .product_smt_btn:hover, .products .card2 .product_smt_btn:hover {
+  background: rgba(162, 87, 26, 0.7568627451);
 }
 @media (max-width: 1024px) {
   .products .card .product_smt_btn, .products .card2 .product_smt_btn {
@@ -228,9 +243,15 @@
   background: #130E0A;
   border: none;
 }
+.products .nxt_btn:hover, .products .nxt:hover {
+  opacity: 0.5;
+}
 .products .prev_btn, .products .prev {
   background: #130E0A;
   border: none;
+}
+.products .prev_btn:hover, .products .prev:hover {
+  opacity: 0.5;
 }
 
 ::-webkit-scrollbar {
