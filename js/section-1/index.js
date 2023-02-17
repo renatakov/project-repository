@@ -8,7 +8,6 @@ const main = document.querySelector('.section-1__main');
 const mainTitle = document.querySelector('.main__title');
 const mainSubText = document.querySelector('.main__subtext');
 const mainBtn = document.querySelector('.main__btn');
-
 const section1 = document.querySelector('.section-1');
 let url = '/img/section-1/photo-1497515114629-f71d768fd07c.png'
 let flag = 1;
@@ -16,7 +15,6 @@ let flag = 1;
 // icon call
 imgCall.addEventListener('click', (e) => {
   modalWindowBlock.style.display = 'flex';
-  console.log(window.innerWidth)
   if(flag === 1){
     flag = 0;
     section1.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
