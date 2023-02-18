@@ -123,7 +123,7 @@ body p::selection, body h1::selection, body h2::selection, body a::selection {
     margin: 0;
   }
 }
-@media (max-width: 391px) {
+@media (max-width: 425px) {
   .products .container {
     width: 248px;
     margin: 0 auto;

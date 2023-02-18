@@ -14,7 +14,10 @@ menuBtn.addEventListener('click', ()=> {
         menuBtn.classList.add('open');
         menuOpen=true;
         navList.style.display = 'flex';
-        menu.style.width = '500px';
+        if(window.innerWidth >= 320 && window.innerWidth <= 426){
+            menu.style.marginLeft = '0';
+            menu.style.width = window.innerWidth / 2 + 'px';
+        }
         imgBuy1.style.display = 'none';
         imgCall1.style.display = 'none';
         imgSearch1.style.display = 'none';
@@ -22,12 +25,14 @@ menuBtn.addEventListener('click', ()=> {
         menu.style.paddingLeft = '20px';
         menu.style.background = 'rgba(206, 195, 181, 0.2)'
         menu.style.backdropFilter = 'blur(10px)';
-        menuNav.style.height = window.innerHeight * 2 + 'px';
+        menuNav.style.height = window.innerHeight * 1.76 + 'px';
     }
     else {
         menuBtn.classList.remove('open');
         navList.style.display = 'none'
         menu.style.width = '0';
+        menu.style.marginLeft = '20px';
+
         menu.style.background = 'none'
         menu.style.backdropFilter = 'none';
         menuBtn.style.marginTop = '0';
