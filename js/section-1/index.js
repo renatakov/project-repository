@@ -43,6 +43,7 @@ modalWindowClose.addEventListener('click', (e) => {
       mainTitle.style.display = 'block';
       mainSubText.style.display = 'block';
       mainBtn.style.display = 'block';
+      section1.style.backgroundColor = 'rgba(40, 40, 40, 0.5)'
     }
   }
 });
