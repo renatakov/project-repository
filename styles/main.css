@@ -221,12 +221,6 @@ color: #CEC3B5;
 /* планшет - (section-1) */
 
 @media (min-width: 768px) and (max-width: 835px) {
-  .section-1 {
-    /* background: linear-gradient(90deg, rgba(31, 22, 18, 0.65) 40%, transparent 60%) no-repeat,
-    url('/img/section-1/photo-1497515114629-f71d768fd07c.png') 75% 60% no-repeat;
-    background-size: cover; */
-
-  }
   .header__span {
     font-size: 20px;
   }
@@ -272,12 +266,11 @@ padding: 11px 46px;
 
 @media (min-width: 320px) and (max-width: 426px){
   .section-1{
-      background-image:url('/img/section-1/photo-1497515114629-f71d768fd07c.png') 45% 60% no-repeat;
       background-color: rgba(40, 40, 40, 0.5);
   }
   .header__span {
     font-size: 16px;
-line-height: 20px;
+  line-height: 20px;
   }
 
   .menu{
@@ -285,10 +278,7 @@ line-height: 20px;
     background: none;
   backdrop-filter: none;
   margin: 0 20px;
-  justify-content: space-between;
     width: 0;
-    /* padding: 0 0 100px; */
-
   }
   .menu-btn{
     display: flex;
@@ -331,8 +321,6 @@ margin-top: 26px;
   .section-1__modalWindow {
     padding: 25px;
     margin: -250px;
-  }
-  .section-1__modalWindow__close {
   }
   .modalWindow__number {
     font-size: 16px;
