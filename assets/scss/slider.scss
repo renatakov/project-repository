@@ -173,8 +173,20 @@ body {
         font-size: 20px;
         font-weight: 700;
         padding-bottom: 5px;
+        @media (max-width: 768px) {
+           font-size: 14px;
+        }
         @media (max-width: 426px) {
            font-size: 12px;
+        }
+    }
+
+    .product_text {
+        @media (max-width: 768px) {
+           font-size: 12px;
+        }
+        @media (max-width: 426px) {
+           font-size: 10px;
         }
     }
     
