@@ -268,6 +268,10 @@ padding: 11px 46px;
   .section-1{
       background-color: rgba(40, 40, 40, 0.5);
   }
+  .section-1__header{
+    /* height: 100%; */
+    /* margin-top: -250px; */
+  }
   .header__span {
     font-size: 16px;
   line-height: 20px;

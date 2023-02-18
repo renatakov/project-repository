@@ -5,6 +5,8 @@ const listLi = document.querySelector('.list__li');
 const imgCall1 = document.querySelector('.imgCall');
 const imgSearch1 = document.querySelector('.imgSearch');
 const imgBuy1 = document.querySelector('.imgBuy');
+const menuNav = document.querySelector('.menu-nav');
+
 
 let menuOpen = false;
 menuBtn.addEventListener('click', ()=> {
@@ -20,6 +22,7 @@ menuBtn.addEventListener('click', ()=> {
         menu.style.paddingLeft = '20px';
         menu.style.background = 'rgba(206, 195, 181, 0.2)'
         menu.style.backdropFilter = 'blur(10px)';
+        menuNav.style.height = window.innerHeight * 2 + 'px';
     }
     else {
         menuBtn.classList.remove('open');
