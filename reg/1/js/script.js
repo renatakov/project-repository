@@ -49,11 +49,17 @@ prevNextIcon.forEach(icon => { // getting prev and next icons
 let btn_k = document.querySelector(".btn_k")
 let kovorking_kk = document.querySelector(".kovorking_kk")
 let months1 = document.querySelector(".register")
+let el1 = document.querySelector(".el1")
+let el2 = document.querySelector(".el2")
 
 btn_k.addEventListener("click", () => {
     kovorking_kk.style.display = "none"
     months1.style.display = "flex"
 })
+
+
+
+
 
 
 
