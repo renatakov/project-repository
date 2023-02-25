@@ -5,7 +5,7 @@
     .container_k {
         background:
             linear-gradient(rgba(19, 14, 10, 0.7), rgba(0, 0, 0, 0.8)),
-            url(/assets/img/kovorking.png);
+            url('/reg/1/img/kovorking.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 217.55px;
@@ -16,7 +16,7 @@
 .container_k{
     background:
         linear-gradient(rgba(19, 14, 10, 0.7), rgba(0, 0, 0, 0.8)),
-        url(/assets/img/kovorking.png);
+        url('/reg/1/img/kovorking.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 465.22px;
@@ -26,7 +26,7 @@
     .container_k {
     background:
         linear-gradient(rgba(19, 14, 10, 0.7), rgba(0, 0, 0, 0.8)),
-        url(/assets/img/kovorking.png);
+        url('/reg/1/img/kovorking.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 714px;
@@ -242,7 +242,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: rgba(19, 14, 10, 0.85);    
+    color: rgba(19, 14, 10, 0.85);
 }
 }
 
