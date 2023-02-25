@@ -227,14 +227,14 @@ height: 1000px;
   flex-direction: column;
 }
 
-.nav-list > li{
+.nav-m-list > li{
   font-weight: 600;
-font-size: 16px;
+font-size: 20px;
 line-height: 20px;
 text-decoration: underline;
 color: #CEC3B5;
 }
-.nav-list>li:hover{
+.nav-m-list>li:hover{
   color: #A1581A;
 }
 
