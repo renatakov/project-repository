@@ -9,7 +9,7 @@
         height: 38px;
         width: 38px;
         }
-        
+
         .zerno_k{
         height: 38px;
         width: 38px;
@@ -26,20 +26,20 @@
           }
 
           .input_footer{
-            position: absolute;
+            /* position: absolute; */
             width: 384px;
             height: 34px;
-            left: 225px;
-            top: 118px;
+            /* left: 225px; */
+            /* top: 118px; */
             margin-left: 60px;
           }
 
           .registerbtn{
-            position: absolute;
+            /* position: absolute; */
             width: 104.94px;
             height: 27.33px;
-            left: 500.17px;
-            top: 121.5px;
+            /* left: 500.17px; */
+            /* top: 121.5px; */
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
@@ -60,7 +60,7 @@
 
                   .contacts{
                     margin-left: 115px;
-                  } 
+                  }
 
                   .socials{
                     margin-top: 80px;
@@ -104,7 +104,7 @@
             margin-right: 23px;
 
             }
-        
+
         .zerno_k{
             width: 60px;
             height: 60px;
@@ -122,19 +122,19 @@
           }
 
           .input_footer{
-            position: absolute;
+            /* position: absolute; */
             width: 494px;
             height: 51px;
-            left: 393px;
-            top: 208px;
+            /* left: 393px; */
+            /* top: 208px; */
             margin-left: 60px;
           }
 
           .registerbtn{
             width: 135px;
             height: 41px;
-            left: 747px;
-            top: 214px;
+            /* left: 747px; */
+            /* top: 214px; */
             margin-left: 60px;
             font-weight: 600;
             font-size: 20px;
@@ -182,19 +182,19 @@
                     height: 18.44px;
                     margin-right: 15px;
                     }
-                    
+
                     .tw{
                         width: 21.33px;
                         height: 18.43px;
                     margin-right: 15px;
                     }
-                    
+
                     .fb{
                         width: 18.44px;
                         height: 18.44px;
                     margin-right: 15px;
                     }
-                    
+
                     .yt{
                         width: 25.43px;
                         height: 18.13px;
@@ -206,13 +206,13 @@
 height: 15px;
                         margin-right: 5px;
                         }
-                        
+
                         .icon_1{
                             width: 15px;
                             height: 15.32px;
                         margin-right: 5px;
                         }
-                        
+
                         .icon_2{
                             width: 11.22px;
                             height: 15px;
