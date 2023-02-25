@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 @import url('./first-styles.css');
 @import url('/assets/css/slider.css');
+@import url('/reg/1/css/style.css');
+@import url('/reg/1/css/reg.css');
+@import url('/reg/1/css/kovorking.css');
+/* @import url('/footer/footer.css');
+@import url('/footer/footer_adaptive.css'); */
+
 
 .section-1 {
   display: flex;
