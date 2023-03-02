@@ -173,6 +173,9 @@ body {
         font-size: 20px;
         font-weight: 700;
         padding-bottom: 5px;
+        @media (max-width: 977px) {
+            font-size: 16px;
+         }
         @media (max-width: 768px) {
            font-size: 14px;
         }
@@ -182,7 +185,6 @@ body {
     }
 
     .product_text {
-
         @media (max-width: 768px) {
            font-size: 12px;
         }
@@ -203,6 +205,9 @@ body {
            font-weight: 700;
            font-size: 20px;
            margin: 0;
+           @media (max-width: 977px) {
+             font-size: 14px;
+          }
            @media (max-width: 426px) {
              font-size: 15px;
           }
@@ -229,6 +234,9 @@ body {
 .second_card {
     .product_smt {
         margin-top: 30px;
+        @media (max-width: 977px) {
+          margin-top: 29px;
+       }
         @media (max-width: 426px) {
           margin-top: 18px;
        }
@@ -238,7 +246,10 @@ body {
     }
 
     &:nth-child(2) {
-        .product_smt {
+        .product_smt { 
+            @media (max-width: 977px) {
+                margin-top: 20px;
+             }
             @media (max-width: 769px) {
                 margin-top: 15px;
             }
@@ -285,6 +296,14 @@ body {
    }
 }
 }
+
+ .card3 {
+     .product_smt {    
+        @media (max-width: 977px) {
+            margin-top: 2px;
+         }
+     }
+} 
 
 .card3 {
     .product_smt {
