@@ -32,12 +32,22 @@ navList1.style.opacity = '1'
 })
 
 inputSearch.addEventListener('input', () =>{
-  fetch('http://localhost:5000/api/getDishes')
-  .then((res)=>{
-    res.json()
-  })
-  .then((data)=>{
-console.log(data)
-  })
-  .catch((error)=>{console.log(error)})
 })
+// fetch('http://localhost:5000/api/getDishes')
+// .then((res)=>{
+//   res.json()
+// })
+// .then((data)=>{
+// console.log(data)
+// })
+// .catch((error)=>{console.log(error)})
+
+
+// axios.get("http://localhost:5000/api/getDishes")
+
+// .then((res)=>{
+//   console.log(res.data);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// });
