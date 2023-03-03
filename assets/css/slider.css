@@ -205,6 +205,11 @@ body p::selection, body h1::selection, body h2::selection, body a::selection {
   font-weight: 700;
   padding-bottom: 5px;
 }
+@media (max-width: 977px) {
+  .products .card .product_title, .products .card2 .product_title {
+    font-size: 16px;
+  }
+}
 @media (max-width: 768px) {
   .products .card .product_title, .products .card2 .product_title {
     font-size: 14px;
@@ -228,6 +233,7 @@ body p::selection, body h1::selection, body h2::selection, body a::selection {
 .products .card .product_smt, .products .card2 .product_smt {
   display: flex;
   margin-top: 15px;
+  margin-bottom: 0;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -236,6 +242,16 @@ body p::selection, body h1::selection, body h2::selection, body a::selection {
   font-weight: 700;
   font-size: 20px;
   margin: 0;
+}
+@media (max-width: 977px) {
+  .products .card .product_smt_price, .products .card2 .product_smt_price {
+    font-size: 14px;
+  }
+}
+@media (max-width: 426px) {
+  .products .card .product_smt_price, .products .card2 .product_smt_price {
+    font-size: 15px;
+  }
 }
 .products .card .product_smt_btn, .products .card2 .product_smt_btn {
   transition: background 0.3s;
@@ -248,10 +264,81 @@ body p::selection, body h1::selection, body h2::selection, body a::selection {
 .products .card .product_smt_btn:hover, .products .card2 .product_smt_btn:hover {
   background: rgba(162, 87, 26, 0.7568627451);
 }
-@media (max-width: 1024px) {
+@media (max-width: 989px) {
   .products .card .product_smt_btn, .products .card2 .product_smt_btn {
     padding: 8px;
     font-size: 10px;
+  }
+}
+.products .second_card .product_smt {
+  margin-top: 30px;
+}
+@media (max-width: 977px) {
+  .products .second_card .product_smt {
+    margin-top: 29px;
+  }
+}
+@media (max-width: 426px) {
+  .products .second_card .product_smt {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .products .second_card .product_smt {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 977px) {
+  .products .second_card:nth-child(2) .product_smt {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .products .second_card:nth-child(2) .product_smt {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 769px) {
+  .products .second_card:first-child .product_smt {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 426px) {
+  .products .four .product_smt, .products .six .product_smt {
+    margin-top: 5px;
+  }
+}
+.products .card4 .product_smt, .products .card5 .product_smt, .products .card6 .product_smt {
+  margin-top: 35px;
+}
+@media (max-width: 768px) {
+  .products .card4 .product_smt, .products .card5 .product_smt, .products .card6 .product_smt {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 426px) {
+  .products .card4 .product_smt, .products .card5 .product_smt, .products .card6 .product_smt {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .products .card4 .product_smt, .products .card5 .product_smt, .products .card6 .product_smt {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .products .card4 .product_smt, .products .card6 .product_smt {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 977px) {
+  .products .card3 .product_smt {
+    margin-top: 2px;
+  }
+}
+@media (max-width: 426px) {
+  .products .card3 .product_smt {
+    margin-top: 5px;
   }
 }
 .products .nxt_btn, .products .nxt {
