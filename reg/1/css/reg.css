@@ -281,6 +281,7 @@ header .icons span:hover {
         margin-left: 8%;
         height: 591px;
         top: 1190px;
+        z-index: 1;
     }
 }
 

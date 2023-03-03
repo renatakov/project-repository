@@ -728,6 +728,7 @@ body {
         width: 100%;
         height: 400px;
         background: rgba(9, 35, 28);
+        z-index: 0;
     }
 }
 
