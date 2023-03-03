@@ -328,6 +328,17 @@ color: #CEC3B5;
     padding: 16px 50px;
     margin-top: 50px;
   }
+  .header__span{
+    flex: 0 1 20%;
+  }
+  .search{
+    top: 10%;
+    left: 75%;
+  }
+  .search input{
+    width: 150px;
+    font-size: 15px;
+  }
   .section-1__modalWindow {
   padding: 50px;
   margin: -120px;

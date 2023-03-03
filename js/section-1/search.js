@@ -3,6 +3,7 @@ const btnSearch = document.querySelector('#btnClose');
 const headerSpan = document.querySelector('.header__span');
 const navList1 = document.querySelector('.nav__list');
 const inputSearch = document.querySelector('#inputSearch');
+const menu1 = document.querySelector('menu-btn');
 
 imgSearch.addEventListener('click', () => {
   console.log('click')
@@ -29,6 +30,7 @@ imgCall.style.display = 'block';
 imgSearch.style.display = 'block';
 search.style.display = 'none';
 navList1.style.opacity = '1'
+
 })
 
 inputSearch.addEventListener('input', () =>{
