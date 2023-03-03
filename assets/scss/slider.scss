@@ -246,7 +246,7 @@ body {
     }
 
     &:nth-child(2) {
-        .product_smt { 
+        .product_smt {
             @media (max-width: 977px) {
                 margin-top: 20px;
              }
@@ -298,12 +298,12 @@ body {
 }
 
  .card3 {
-     .product_smt {    
+     .product_smt {
         @media (max-width: 977px) {
             margin-top: 2px;
          }
      }
-} 
+}
 
 .card3 {
     .product_smt {
