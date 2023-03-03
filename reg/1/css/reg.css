@@ -10,6 +10,18 @@
     display: none;
 }
 
+@media(max-width:834px) {
+    .wrapper {
+        position: absolute;
+        height: 213px;
+        margin: 25px 56px 353px 56px;
+        width: 208px;
+        background: #CEC3B5;
+        border-radius: 15px;
+        box-shadow: 0 15px 40px rgba(8, 6, 5, 0.15);
+    }
+}
+
 @media(min-width:834px) {
 .wrapper {
     position: absolute;
@@ -39,6 +51,16 @@
 
 header p {
     margin: 0px;
+}
+
+@media(max-width:834px) {
+    .wrapper header {
+        display: flex;
+        align-items: center;
+        padding: 3px 15px 3px;
+        justify-content: center;
+
+    }
 }
 
 @media(min-width:834px) {
@@ -85,6 +107,17 @@ header .icons span {
 
 header .icons span:hover {
     background: #f2f2f2;
+}
+
+@media(max-width:834px) {
+    header .current-date {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #A2581A;
+    }
 }
 
 @media(min-width:834px) {
@@ -154,7 +187,7 @@ header .icons span:hover {
     font-size: 1rem;
 }
 
-@media(min-width:834px) {
+@media(max-width:1280px) {
     .calendar .weeks li {
         font-family: 'Montserrat';
         font-style: normal;
@@ -181,13 +214,13 @@ header .icons span:hover {
     }
 }
 
-@media(min-width:834px) {
+@media(max-width:1280px) {
 .calendar .days li {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 10px;
+        line-height: 12px;
         z-index: 1;
         cursor: pointer;
         position: relative;
@@ -238,7 +271,18 @@ header .icons span:hover {
     background: #f2f2f2;
 }
 
-
+@media (max-width:834px) {
+    .register {
+        background: #CEC3B5;
+        border-radius: 20px;
+        position: absolute;
+        width: 82%;
+        margin-top: 8%;
+        margin-left: 8%;
+        height: 591px;
+        top: 1190px;
+    }
+}
 
 @media (min-width:834px) {
     .register {
@@ -266,7 +310,16 @@ header .icons span:hover {
 
 
 
-
+@media(max-width:834px) {
+    .hours_k {
+        width: 207px;
+        height: 20px;
+        position: absolute;
+        margin-top: 263px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 
 @media(min-width:834px) {
 .hours_k {
@@ -290,6 +343,41 @@ header .icons span:hover {
     }
 }
 
+@media(max-width:834px) {
+    .time_k2 {
+        margin-left: 75px;
+    }
+
+
+    .time_k3 {
+        margin-left: 150px;
+    }
+
+    .p_time1,
+    .p_time2,
+    .p_time3 {
+        padding: 0px 16px;
+        margin: 0;
+        width: 33px;
+        height: 13px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+        color: #090605;
+    }
+
+    .time_k1,
+    .time_k2,
+    .time_k3 {
+        position: absolute;
+        width: 57px;
+        height: 20px;
+        background: #C5BAAD;
+        border-radius: 15px;
+    }
+}
 
 @media(min-width:834px) {
 .time_k2 {
@@ -304,7 +392,7 @@ header .icons span:hover {
     .p_time1,
     .p_time2,
     .p_time3 {
-        padding: 3px 5px;
+        padding: 0px 16px;
         margin: 0;
         width: 33px;
         height: 13px;
@@ -339,7 +427,7 @@ header .icons span:hover {
     .p_time1,
     .p_time2,
     .p_time3 {
-        padding: 6px 15px;
+        padding: 0px 25px;
         margin: 0;
         width: 51px;
         height: 20px;
@@ -358,6 +446,54 @@ header .icons span:hover {
         height: 33px;
         background: #C5BAAD;
         border-radius: 15px;
+    }
+}
+
+@media(max-width:834px) {
+    .reg_form_k {
+        margin-left: 0px;
+        margin-top: 333px;
+        position: absolute;
+        width: 243px;
+        height: 178px;
+    }
+
+    .name_k,
+    .surname_k,
+    .phone_k {
+
+        width: 243px;
+        height: 49px;
+    }
+
+    .p_name1,
+    .p_name2,
+    .p_name3 {
+        margin: 0;
+        width: 101px;
+        height: 13px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        color: rgba(8, 6, 5);
+    }
+
+    .input_name1,
+    .input_name2,
+    .input_name3 {
+        padding-left: 10px;
+        font-size: 16px;
+        width: 243px;
+        height: 37px;
+        background: #C5BAAD;
+        border-radius: 15px;
+    }
+
+    .p_name2,
+    .p_name3 {
+        margin-top: 16px;
     }
 }
 
@@ -395,7 +531,8 @@ header .icons span:hover {
     .input_name1,
     .input_name2,
     .input_name3 {
-
+        padding-left: 10px;
+        font-size: 16px;
         width: 243px;
         height: 37px;
         background: #C5BAAD;
@@ -428,6 +565,8 @@ header .icons span:hover {
     .p_name1,
     .p_name2,
     .p_name3 {
+        padding-left: 10px;
+        font-size: 24px;
         margin: 0;
         width: 190px;
         height: 20px;
@@ -452,6 +591,38 @@ header .icons span:hover {
     .p_name2,
     .p_name3 {
         margin-top: 26px;
+    }
+}
+
+@media(max-width:834px) {
+    .reg_btn_k {
+        position: absolute;
+        margin-top: 536px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 122px;
+        height: 31px;
+    }
+
+    .btn_reg {
+        background: #A2581A;
+        border-radius: 15px;
+        width: 121px;
+        height: 30px;
+    }
+
+    .p_reg {
+        width: 93px;
+        height: 12px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        color: #CEC3B5;
+        margin-left: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
