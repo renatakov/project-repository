@@ -51,16 +51,24 @@ let kovorking_kk = document.querySelector(".kovorking_kk")
 let months1 = document.querySelector(".register")
 let el1 = document.querySelector(".el1")
 let el2 = document.querySelector(".el2")
+let btn_reg = document.querySelector(".btn_reg")
+let inputname1 = document.getElementById("i1")
+let inputname2 = document.getElementById("i2")
+let inputname3 = document.getElementById("i3")
+
 
 btn_k.addEventListener("click", () => {
     kovorking_kk.style.display = "none"
     months1.style.display = "flex"
 })
 
-
-
-
-
+btn_reg.addEventListener("click", () => {
+    localStorage.setItem('name1', inputname1.value);
+    localStorage.setItem('name2', inputname2.value);    
+    localStorage.setItem('phone', inputname3.value);
+    kovorking_kk.style.display = "block"
+    months1.style.display = "none"
+})
 
 
 
