@@ -234,9 +234,9 @@ margin-left: 80%;
   display: none;
   position: relative;
   left: 70%;
-  top: 9%;
+  top: 10.5%;
   width: 150px;
-height: 23.18px;
+height: 0px;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -332,7 +332,7 @@ color: #CEC3B5;
     flex: 0 1 20%;
   }
   .search{
-    top: 10%;
+    top: 12%;
     left: 75%;
   }
   .search input{
@@ -374,6 +374,14 @@ padding: 11px 46px;
   }
   .menu-btn{
     display: flex;
+  }
+
+  .search{
+    left: 50%;
+    top: 11.5%;
+  }
+  .search input{
+    width: 200px;
   }
   .nav__list{
     display: none;

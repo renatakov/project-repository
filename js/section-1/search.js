@@ -9,7 +9,9 @@ imgSearch.addEventListener("click", () => {
   console.log("click");
   section1.style.background = "black";
   headerSpan.style.opacity = "0.2";
-  main.innerHTML = null;
+  main.style.display = "none";
+  menuBtn.style.display = "none";
+
   imgBuy.style.display = "none";
   imgCall.style.display = "none";
   imgSearch.style.display = "none";
@@ -29,16 +31,18 @@ btnSearch.addEventListener("click", () => {
   imgCall.style.display = "block";
   imgSearch.style.display = "block";
   search.style.display = "none";
+  menuBtn.style.display = "flex";
+
   navList1.style.opacity = "1";
 });
 
-inputSearch.addEventListener("input", () => {
-  axios
-    .get("http://localhost:5000/api/getDishes")
-    .then((res) => {
-      console.log(res.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
+// inputSearch.addEventListener("input", () => {
+//   axios
+//     .get("http://localhost:5000/api/getDishes")
+//     .then((res) => {
+//       console.log(res.data);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// });
