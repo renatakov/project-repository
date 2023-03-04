@@ -1,17 +1,24 @@
 const express = require('express')
-const app = express() 
+const app = express()
 
 const mongoose = require('mongoose')
 
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-const http = require('http') 
+const http = require('http')
 
 const routerApi = require('./Routes/api')
 
+const corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200
+}
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(cors(corsOptions))
+
 
 const config = require('./config')
 
@@ -23,11 +30,6 @@ mongoose.connect(config.mongoUrl)
         console.log('MongoDB connection successfully')
     })
     .catch(err => console.log(err))
-
-const corsOptions = {
-    origin: '*',
-    optionsSuccessStatus: 200
-}
 
 const server = http.createServer(app)
 
