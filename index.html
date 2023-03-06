@@ -10,6 +10,41 @@
 </head>
 <body>
     <!-- renata - section-1 -->
+    <div class="cart_wrapper">
+        <h2 class="your_purchases">Ваші покупки :</h2>
+
+        <div class="product_wrapper">
+            <img src="/cart/cart img/IMAGEcapuccino.png" alt="" class="product_img">
+            <div class="caption_wrapper">
+                <div class="first_part"><h3 class="cappucino">cappucino</h3>
+                    <p class="product_caption">signing up for a newsletter, or making <br>
+                        a reservation. This could include</p>
+                    </div>
+                    <div class="second_part">
+                        <h3 class="price">$ 8,5</h3>
+                    <button class="del">видалити</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="product_wrapper">
+            <img src="/cart/cart img/IMAGEcapuccino.png" alt="" class="product_img">
+            <div class="caption_wrapper">
+                <div class="first_part"><h3 class="cappucino">cappucino</h3>
+                    <p class="product_caption">signing up for a newsletter, or making <br>
+                        a reservation. This could include</p>
+                    </div>
+                    <div class="second_part">
+                        <h3 class="price">$ 8,5</h3>
+                    <button class="del">видалити</button>
+                    </div>
+            </div>
+        </div>
+
+        <h2 class="zahalom">Загалом до сплати : <span class="price_wrap">$ 14, 5</span></h2>
+        <button class="back_to_order">повернутись до замовлення</button>
+        <button class="pay">сплатити</button>
+    </div>
     <div class="search">
     <input id="inputSearch" type="text" placeholder="Search">
     <button id="btnClose">
@@ -33,8 +68,8 @@
         <span class="header__span">JavaKava</span>
         <nav class="header__nav">
         <ul class="nav__list">
-            <li class="list__li"><a href="#products_title">кава</a></li>
-            <li class="list__li"><a href="#products_title1">їжа</a></li>
+            <li class="list__li"><a href="#product_title1">кава</a></li>
+            <li class="list__li"><a href="#product_title2">їжа</a></li>
             <li class="list__li"><a href="#kovorking">про нас</a></li>
             <li class="list__li"><a href="#footer">контакти</a></li>
         </ul>
@@ -69,7 +104,7 @@
     <!-- <input class="inputSearch" type="text"> -->
   </section>
   <section class="products">
-    <p class="products_title">Кавове меню</p>
+    <p class="products_title" id="product_title1">Кавове меню</p>
     <hr class="underline">
     <div class="container">
         <button type="button" class="prev_btn controls" id="prev">
@@ -139,7 +174,7 @@
         </button>
     </div>
 
-<p class="products_title">Випічка</p>
+<p class="products_title" id="product_title2">Випічка</p>
 <hr class="underline2">
 <div class="container">
     <button type="button" class=" prev controls2" id="prev_btn" >
@@ -366,5 +401,6 @@
     <script src="./js/section-1/menuBurger.js"></script>
     <script src="/reg/1/js/script.js"></script>
     <script src="/js/section-1/search.js"></script>
+    <script src="/cart/cart.js"></script>
 </body>
 </html>

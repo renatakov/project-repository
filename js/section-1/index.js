@@ -9,6 +9,9 @@ const mainTitle = document.querySelector('.main__title');
 const mainSubText = document.querySelector('.main__subtext');
 const mainBtn = document.querySelector('.main__btn');
 const section1 = document.querySelector('.section-1');
+const cartWrapper = document.querySelector('.cart_wrapper')
+// const iconCart = document.querySelector('.imgBuy')///////////
+const closeCart = document.querySelector('.back_to_order')
 let url = '/img/section-1/photo-1497515114629-f71d768fd07c.png'
 let flag = 1;
 
@@ -49,3 +52,22 @@ modalWindowClose.addEventListener('click', (e) => {
 });
 
 // icon search
+
+
+imgBuy.addEventListener('click', (e) => {
+    header.style.zIndex = '1';
+    cartWrapper.style.zIndex = '2';
+    cartWrapper.style.display = 'block';
+    if(flag === 1){
+        flag = 1;
+    }
+})
+
+closeCart.addEventListener('click', (e) => {
+    cartWrapper.style.display = 'none';
+    header.style.zIndex = '2';
+    cartWrapper.style.zIndex = '-1';
+    if(flag === 0){
+        flag = 0;
+      }
+    });

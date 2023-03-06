@@ -1,12 +1,6 @@
-*{
-    margin: 0;
-    font-family: 'Montserrat';
-    color: #130E0A;
-    border: none;
-}
-
 
 .cart_wrapper{
+    display: none;
 position: absolute;
 width: 340px;
 height: 291px;
