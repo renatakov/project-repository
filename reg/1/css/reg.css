@@ -264,11 +264,18 @@ header .icons span:hover {
 }
 
 .days li.active::before {
-    background: #9B59B6;
+    background: #A1581A;
+    border-radius: 7px;
+    height: 30px;
+    width: 30px;
 }
 
 .days li:not(.active):hover::before {
     background: #f2f2f2;
+    border-radius: 7px;
+    height: 30px;
+    width: 30px;
+
 }
 
 @media (max-width:834px) {
@@ -319,6 +326,7 @@ header .icons span:hover {
         margin-top: 263px;
         margin-left: 0px;
         margin-right: 0px;
+
     }
 }
 
@@ -342,6 +350,11 @@ header .icons span:hover {
         margin-left: 0px;
         margin-right: 485px;
     }
+}
+
+.hours_k .time {
+    margin-right: 25px;
+
 }
 
 @media(max-width:834px) {

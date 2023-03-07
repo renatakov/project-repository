@@ -39,9 +39,10 @@ body {
     }
 
     .underline, .underline2{
-        color: #CEC3B5;
+        background: #CEC3B5;
         margin: 0 auto;
         width: 250px;
+        height: 2px;
         @media (max-width: 768px) {
            width: 173px;
         }
