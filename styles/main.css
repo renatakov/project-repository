@@ -134,7 +134,7 @@ color: #CEC3B5;
   display: none;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: enter;
   background: #CEC3B5;
   border-radius: 20px;
   padding: 25px;
@@ -295,7 +295,7 @@ height: 1000px;
   flex-direction: column;
 }
 
-.nav-m-list > li{
+.nav-m-list > li > a{
   font-weight: 600;
 font-size: 20px;
 line-height: 20px;
