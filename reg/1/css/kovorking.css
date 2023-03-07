@@ -206,13 +206,13 @@
 
 @media (max-width:834px) {
     .btn_txt {
-        margin: 0 0 0 28px;
-        width: 86px;
-        height: 7px;
+        margin: 4px 0 0 22px;
+        width: 100px;
+        height: 14px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
-        font-size: 6px;
+        font-size: 7px;
         line-height: 7px;
         color: rgba(19, 14, 10, 0.85);
     }

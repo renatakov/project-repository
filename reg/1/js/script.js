@@ -70,7 +70,7 @@ btn_reg.addEventListener("click", () => {
     months1.style.display = "none"
 })
 
-
+ 
 
 
 let time1 = document.querySelector(".time_k1")
