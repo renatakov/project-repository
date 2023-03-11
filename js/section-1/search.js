@@ -46,3 +46,19 @@ btnSearch.addEventListener("click", () => {
 //       console.log(err);
 //     });
 // });
+
+
+let products;
+inputSearch.addEventListener('input', (e) => {
+  console.log(e.target.value);
+  
+})
+
+axios.get('http://localhost:5000/api/getDishes')
+.then((res)=>{
+    products = res.data.list;
+    console.log(products);
+})
+    .catch((err) => {
+      console.log(err);
+    });
