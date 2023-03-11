@@ -3,16 +3,32 @@ footer{
   background-color:rgba(19,14,10,1);
   color:rgba(206,195,181,1);
   font-family: 'Montserrat';
+  justify-content: center;
   display: flex;
 }
 .footer_wrapper{
 margin-top: 15px;
 }
 
+.footer_form {
+  display: flex;
+  width: 270px;
+  height: 32px;
+  padding-right: 4px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #CEC3B5;
+}
+
 .info_wrapper{
 /* margin-left: 64px; */
 /* margin-right: 64px; */
+gap: 10px;
+width: 100%;
+display: flex;
 text-align: center;
+align-items: center;
+flex-direction: column;
 justify-content: center;
 }
 
@@ -64,13 +80,11 @@ margin-left: 8px;
 } */
 
 .input_footer{
-  width: 294px;
-  height: 51px;
-  position: relative;
-  left: 10%;
-  background: #CEC3B5;
-  border-radius: 20px;
   border: none;
+  width: 200px;
+  border-radius: 20px;
+  position: relative;
+  background: #CEC3B5;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -90,12 +104,10 @@ padding-left: 13px;
 }
 
 .registerbtn{
-position: relative;
-width: 135px;
-height: 41px;
-left: -100px;
-top: 3px;
 
+position: relative;
+width: 80px;
+height: 28px;
 background: #A2581A;
 border-radius: 20px;
 border: none;
@@ -186,9 +198,10 @@ margin-right: 5px;
 }
 
 .line{
+  height: 2px;
   width: 360px;
-  border: 1px solid #CEC3B5;
-  margin-left: 33px;
+  margin: 0 auto;
+  background-color: #CEC3B5;
 }
 
 .designed_by{
