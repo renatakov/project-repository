@@ -36,29 +36,24 @@ btnSearch.addEventListener("click", () => {
   navList1.style.opacity = "1";
 });
 
-// inputSearch.addEventListener("input", () => {
-//   axios
-//     .get("http://localhost:5000/api/getDishes")
-//     .then((res) => {
-//       console.log(res.data);
-//     })
+
+// let products;
+// inputSearch.addEventListener('input', (e) => {
+//   let h1 = document.createElement("h1");
+//   console.log(e.target.value);
+//   products.map((product) => {
+//     let productValues = Object.values(product);
+//     let productName = [productValues[1]];
+
+//    console.log(productName);
+//   })
+// })
+
+// axios.get('http://localhost:5000/api/getDishes')
+// .then((res)=>{
+//     products = res.data.list;
+//     console.log(products);
+// })
 //     .catch((err) => {
 //       console.log(err);
 //     });
-// });
-
-
-let products;
-inputSearch.addEventListener('input', (e) => {
-  console.log(e.target.value);
-  
-})
-
-axios.get('http://localhost:5000/api/getDishes')
-.then((res)=>{
-    products = res.data.list;
-    console.log(products);
-})
-    .catch((err) => {
-      console.log(err);
-    });
