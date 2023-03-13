@@ -24,9 +24,7 @@ module.exports.CreateProduct = async (req,res) => {
 module.exports.GetListProducts = async (req,res) => { 
     const products = await ProductModel.find()
     if (products) { 
-        res.status(200).json({
-            list: products
-        })
+        res.status(200).json(products)
     } else { 
         res.status(404).json({
             message: 'Products not found'
@@ -41,4 +39,25 @@ module.exports.GetProductById = async (req,res) => {
     } else { 
         res.status(404).json('Product not found')
     }
+}
+
+module.exports.Search = async (req,res) => {
+    const products = await ProductModel.find()
+    let searchArr = []
+    products.forEach(product => {
+        if (product.name.toLowerCase().indexOf(req.query.text.toLowerCase()) != -1){
+            searchArr.push(product)
+        }
+    })
+    res.status(200).json(searchArr)
+}
+
+module.exports.DeleteProduct = async (req,res) => {
+    await ProductModel.deleteOne({
+        name: req.query.name
+    })
+    .then(() => {
+        res.status(200).json('Product deleted')
+    })
+    .catch(err => res.status(500).json(err))
 }
