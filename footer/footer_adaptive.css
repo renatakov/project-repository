@@ -3,6 +3,7 @@
     .footer_wrapper{
         margin-top: 30px;
         align-items: center;
+        margin-left: 30px;
         }
 
     .zerno_b{
@@ -15,39 +16,34 @@
         width: 38px;
         }
 
+        .logo_wrapper{
+        margin-left: 384px;
+        margin-right: 294px;
+        }
+
         .regist{
             margin-top: 30px;
-            text-align: center;
+            margin-left: 105px;
+            margin-bottom: 10px;
           }
 
-          .footer_form {
-            display: flex;
-            width: 384px;
-            height: 34px;
-            padding-right: 4px;
-            justify-content: space-around;
-            background-color: #CEC3B5;
-            border-radius: 20px;
+          .footer_form{
+          margin-left: 90px;
           }
 
           .input_footer{
-            /* position: absolute; */
+            width: 384px;
             height: 34px;
-            /* left: 225px; */
-            /* top: 118px; */
-            /* margin-left: 60px; */
           }
 
           .registerbtn{
-            /* position: absolute; */
             width: 104.94px;
             height: 27.33px;
-            /* left: 500.17px; */
-            /* top: 121.5px; */
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
-            margin-left: 60px;
+            margin-left: -40px;
+            top: 1px;
             }
 
             .input_footer::placeholder{
@@ -72,20 +68,21 @@
 
                  .costyl_wrapper{
                     display: flex;
+                    margin-right: 45px;
+                    margin-left: 75px;
 
                  }
 
                  .line{
-                    height: 1px;
-                    margin: 0 auto;
                     width: 661.69px;
-                    background-color: #CEC3B5;
-                    
+                    border: 1px solid #CEC3B5;
+                    margin-left: 175px;
                   }
 
                   .designed_by{
                     font-weight: 600;
                     font-size: 14px;
+                    margin-left: 120px;
                     }
 }
 
@@ -93,6 +90,7 @@
 
     .footer_wrapper{
         margin-top: 70px;
+        margin-left: -30px;
         }
 
     .zerno_b{
@@ -115,14 +113,15 @@
         }
 
         .logo_wrapper{
-        display: flex;
-        justify-content: center;
+        margin-left: 395px;
         }
 
         .regist{
-            margin: 15px 0 10px;
+            /* margin-top: 40px; */
             font-size: 20px;
             line-height: 24px;
+            margin-left: 100px;
+            margin-bottom: 20px;
           }
 
           .input_footer{
@@ -139,7 +138,8 @@
             height: 41px;
             /* left: 747px; */
             /* top: 214px; */
-            margin-left: 60px;
+            top: 3.5px;
+            margin-left: -68px;
             font-weight: 600;
             font-size: 20px;
             line-height: 24px;
@@ -207,7 +207,7 @@
 
                     .icon{
                         width: 12.52px;
-height: 15px;
+                        height: 15px;
                         margin-right: 5px;
                         }
 
@@ -240,29 +240,5 @@ height: 15px;
                     line-height: 24px;
                     margin-left: 140px;
                     }
-
-                    
-          .footer_form {
-            display: flex;
-            width: 494px;
-            height: 51px;
-            padding: 5px;
-            align-items: center;
-            border-radius: 20px;
-            justify-content: space-around;
-            background-color: #CEC3B5;
-          }
-
-          .registerbtn{
-            /* position: absolute; */
-            width: 235px;
-            height: 41px;
-            /* left: 500.17px; */
-            /* top: 121.5px; */
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 17px;
-            margin-left: 60px;
-            }
 }
 
