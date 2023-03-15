@@ -1,11 +1,13 @@
 
 .cart_wrapper{
-    display: none;
+display: none;
 position: absolute;
 width: 340px;
 height: 291px;
 background: #CEC3B5;
 border-radius: 20px;
+margin-left: 130px;
+margin-top: 350px;
 }
 
 .your_purchases{
