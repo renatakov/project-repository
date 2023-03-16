@@ -3,11 +3,11 @@ footer{
   background-color:rgba(19,14,10,1);
   color:rgba(206,195,181,1);
   font-family: 'Montserrat';
-  justify-content: center;
   display: flex;
 }
 .footer_wrapper{
 margin-top: 15px;
+<<<<<<< HEAD
 }
 
 .footer_form {
@@ -19,23 +19,24 @@ margin-top: 15px;
   align-items: center;
   border-radius: 20px;
   background-color: #CEC3B5;
+=======
+margin-left: 80px;
+>>>>>>> 177da2391e98f470da7fcda22d0165ad0647f068
 }
 
 .info_wrapper{
 /* margin-left: 64px; */
 /* margin-right: 64px; */
-gap: 10px;
-width: 100%;
-display: flex;
 text-align: center;
-align-items: center;
-flex-direction: column;
 justify-content: center;
 }
 
 .logo_wrapper{
 display: flex;
 margin-bottom: 2px;
+justify-content: center;
+margin-top: 30px;
+
 }
 
 .zerno_b{
@@ -69,6 +70,7 @@ margin-left: 8px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+  margin-bottom: 10px;
 }
 
 .bold{
@@ -81,19 +83,26 @@ margin-left: 8px;
 } */
 
 .input_footer{
+<<<<<<< HEAD
   margin-right: 5px;
   border: none;
   width: 164px;
   height: 32px;
   border-radius: 20px;
   position: relative;
+=======
+  width: 294px;
+  height: 31px;
+>>>>>>> 177da2391e98f470da7fcda22d0165ad0647f068
   background: #CEC3B5;
+  border-radius: 20px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
   line-height: 10px;
   color: rgba(19, 14, 10, 0.6);
+  margin-left: 52px;
 }
 
 .input_footer::placeholder{
@@ -107,10 +116,11 @@ padding-left: 13px;
 }
 
 .registerbtn{
-
 position: relative;
-width: 80px;
-height: 28px;
+width: 65px;
+height: 21px;
+left: -75px;
+
 background: #A2581A;
 border-radius: 20px;
 border: none;
@@ -120,7 +130,7 @@ font-weight: 600;
 font-size: 8px;
 line-height: 10px;
 color: #CEC3B5;
-/* margin-top: 10px; */
+margin-top: 10px;
 }
 
 .contacts_wrapper{
@@ -201,10 +211,9 @@ margin-right: 5px;
 }
 
 .line{
-  height: 2px;
   width: 360px;
-  margin: 0 auto;
-  background-color: #CEC3B5;
+  border: 1px solid #CEC3B5;
+  margin-left: 33px;
 }
 
 .designed_by{

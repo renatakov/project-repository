@@ -4,6 +4,7 @@ const headerSpan = document.querySelector(".header__span");
 const navList1 = document.querySelector(".nav__list");
 const inputSearch = document.querySelector("#inputSearch");
 const menu1 = document.querySelector("menu-btn");
+let productsList = document.querySelector('#productsList')
 
 imgSearch.addEventListener("click", () => {
   console.log("click");
@@ -11,7 +12,7 @@ imgSearch.addEventListener("click", () => {
   headerSpan.style.opacity = "0.2";
   main.style.display = "none";
   menuBtn.style.display = "none";
-
+  productsList.style.display = "flex";
   imgBuy.style.display = "none";
   imgCall.style.display = "none";
   imgSearch.style.display = "none";
@@ -32,28 +33,44 @@ btnSearch.addEventListener("click", () => {
   imgSearch.style.display = "block";
   search.style.display = "none";
   menuBtn.style.display = "flex";
-
+  productsList.style.display = "none";
   navList1.style.opacity = "1";
 });
 
 
-// let products;
-// inputSearch.addEventListener('input', (e) => {
-//   let h1 = document.createElement("h1");
-//   console.log(e.target.value);
-//   products.map((product) => {
-//     let productValues = Object.values(product);
-//     let productName = [productValues[1]];
 
-//    console.log(productName);
-//   })
-// })
 
-// axios.get('http://localhost:5000/api/getDishes')
-// .then((res)=>{
-//     products = res.data.list;
-//     console.log(products);
-// })
-//     .catch((err) => {
-//       console.log(err);
-//     });
+let generateProducts = (listProducts) => { 
+    productsList.innerHTML = ""
+    listProducts.forEach((product, index) => {
+        productsList.innerHTML += `
+            <div id="product-${index}" class="product">
+                <img src="http://localhost:5000/img/${product.img}">
+                <p id="name-${index}">${product.name}</p>
+                <p>${product.description}</p>
+                <p id="price-${index}">₴ ${product.price}</p>
+                <button id="btn">замовити</button>
+            </div>
+        `
+    });
+
+}
+
+let getProductsList = () => { 
+    axios.get('http://localhost:5000/api/getDishes')    
+        .then(res => {
+            generateProducts(res.data)
+        })
+}
+getProductsList()
+
+inputSearch.addEventListener('input',()=>{
+  if(inputSearch.value.length == 0){
+      getProductsList()
+  } else {
+      axios.get(`http://localhost:5000/api/search?text=${inputSearch.value}`)
+      .then(res => {
+          generateProducts(res.data)
+      })
+  }
+})
