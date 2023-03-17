@@ -3,25 +3,10 @@ footer{
   background-color:rgba(19,14,10,1);
   color:rgba(206,195,181,1);
   font-family: 'Montserrat';
-  display: flex;
+  padding-top: 30px;
 }
 .footer_wrapper{
 margin-top: 15px;
-<<<<<<< HEAD
-}
-
-.footer_form {
-  display: flex;
-  width: 270px;
-  height: 32px;
-  padding-left: 25px;
-  padding-right: 4px;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #CEC3B5;
-=======
-margin-left: 80px;
->>>>>>> 177da2391e98f470da7fcda22d0165ad0647f068
 }
 
 .info_wrapper{
@@ -77,32 +62,29 @@ margin-left: 8px;
   font-weight: 700;
 }
 
-/* .footer_form{
+.footer_form{
+  width: 260px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 25px;
   background: #CEC3B5;
-  border-radius: 20px;
-} */
+  justify-content: space-around;
+}
 
 .input_footer{
-<<<<<<< HEAD
-  margin-right: 5px;
-  border: none;
-  width: 164px;
-  height: 32px;
-  border-radius: 20px;
-  position: relative;
-=======
-  width: 294px;
-  height: 31px;
->>>>>>> 177da2391e98f470da7fcda22d0165ad0647f068
-  background: #CEC3B5;
+  width: 250px;
+  height: 20px;
   border-radius: 20px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 10px;
+  background: #CEC3B5;
   color: rgba(19, 14, 10, 0.6);
-  margin-left: 52px;
 }
 
 .input_footer::placeholder{
@@ -112,15 +94,12 @@ font-weight: 600;
 font-size: 8px;
 line-height: 10px;
 color: rgba(19, 14, 10, 0.6);
-padding-left: 13px;
 }
 
 .registerbtn{
 position: relative;
-width: 65px;
+width: 70px;
 height: 21px;
-left: -75px;
-
 background: #A2581A;
 border-radius: 20px;
 border: none;
@@ -130,7 +109,14 @@ font-weight: 600;
 font-size: 8px;
 line-height: 10px;
 color: #CEC3B5;
-margin-top: 10px;
+}
+
+.costyl_wrapper {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .contacts_wrapper{
@@ -146,7 +132,7 @@ margin-top: 10px;
 
 .socials{
 display: inline-block;
-margin-left: 76px;
+margin-top: 80px;
 }
 
 .socials_wrapper{
@@ -211,9 +197,10 @@ margin-right: 5px;
 }
 
 .line{
+  height: 2px;
   width: 360px;
-  border: 1px solid #CEC3B5;
-  margin-left: 33px;
+  margin: 0 auto;
+  background-color: #CEC3B5;
 }
 
 .designed_by{
@@ -223,4 +210,8 @@ line-height: 17px;
 margin-top: 10px;
 margin-bottom: 10px;
 text-align: center;
+}
+
+.designed_by_wrapper {
+  padding-bottom: 10px;
 }
