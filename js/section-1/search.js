@@ -6,7 +6,7 @@ const inputSearch = document.querySelector("#inputSearch");
 const menu1 = document.querySelector("menu-btn");
 let productsList = document.querySelector('#productsList')
 let bucketList = document.querySelector('.product_wrapper')
-let btnOpen = document.querySelector('.product_smt_btn')
+//let btnsOpen = document.querySelectorAll('.product_smt_btn')
 
 imgSearch.addEventListener("click", () => {
   console.log("click");
@@ -94,7 +94,9 @@ let openBucket = () => {
     axios.get(`http://localhost:5000/bucket/get-products?id=${userId}`)
         .then((res) => {
             bucketList.innerHTML = ""
+            let sum = 0
             res.data.forEach((product)=> { 
+                sum += product.price
                 bucketList.innerHTML += `
                 <div class="bucketItem">
                     <p>${product.name}----${product.price}</p>
@@ -102,6 +104,7 @@ let openBucket = () => {
                 </div>
                 `
             })
+            document.querySelector('.price_wrap').innerText = `₴ ${sum}`
             let listBucketItems = document.querySelectorAll('.bucketItem')
             console.log(listBucketItems)
             listBucketItems.forEach((item,index) => {
@@ -131,5 +134,26 @@ let addProduct = (product) => {
         })
 }
 
-btnOpen.addEventListener('click', openBucket)
+//btnOpen.addEventListener('click', openBucket)
+/*btnsOpen.forEach((btn,index)=> {
+    btn.addEventListener('click',openBucket)
+})*/
+
 imgBuy.addEventListener("click", openBucket)
+
+let cards = document.querySelectorAll('.card')
+cards.forEach((card) => {
+    card.addEventListener('click', (e) => { 
+        if(e.target.classList.value == 'product_smt_btn'){
+            let title = card.childNodes[3].innerText
+            let price = card.childNodes[7].childNodes[1].innerText
+            price = price.substring(2)
+            addProduct(
+                {
+                    name: title,
+                    price
+                }
+            )
+        }
+    })
+})
