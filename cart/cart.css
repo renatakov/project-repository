@@ -2,12 +2,13 @@
 .cart_wrapper{
 display: none;
 position: absolute;
-width: 340px;
+width: 400px;
 height: 291px;
 background: #CEC3B5;
 border-radius: 20px;
-margin-left: 130px;
-margin-top: 350px;
+margin-left: 200px;
+margin-top: 100px;
+/* padding-bottom: 30px; */
 }
 
 .your_purchases{
@@ -24,10 +25,11 @@ margin-top: 350px;
     margin-right: 25px;
     margin-left: 25px;
     display: flex;
+    flex-direction: column;
     background: rgba(19, 14, 10, 0.05);
     border-radius: 15px;
     width: 290px;
-    height: 50px; 
+    height: 150px; 
     margin-bottom: 20px;  
 }
 
