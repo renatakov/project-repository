@@ -99,8 +99,8 @@ let openBucket = () => {
                 sum += product.price
                 bucketList.innerHTML += `
                 <div class="bucketItem">
-                    <p>${product.name}----${product.price}</p>
-                    <button id="btnDelete">Delete</button>
+                    <p>${product.name} - <span>₴${product.price}</span></p>
+                    <button id="btnDelete">видалити</button>
                 </div>
                 `
             })
